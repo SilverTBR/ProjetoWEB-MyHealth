@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background-color: #add4d0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.campos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.nome-campo-entrada {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+label {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 30px;
+    font-weight: 43px;
+    line-height: 43px;
+
+}
+
+input[type="radio"] {
+    width: 35px;
+    margin-right: 10px;
+}
+
+
+input {
+    font-family: 'Averia Libre';
+    color: #3F92C5;
+    width: 300px;
+    height: 51px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.comprovante {
+    width: 200px;
+}
+
+.nome-campo {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.entrada {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.botao-image {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.inserir-image {
+    display: flex;
+    width: 200px;
+    height: 36px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #419ED7;
+    border: 1px solid #419ED7;
+    box-shadow: 0 4px 2px -2px gray;
+    cursor: pointer;
+}
+
+.inserir-image span {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 20px;
+
+}
+
+.link {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botao-Salvar {
+    background-color: #37BD6D;
+    width: 188px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 24px;
+    font-weight: 43px;
+    line-height: 43px;
+    margin-bottom: 0;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.botao-excluir {
+    background-color: #FD7979;
+    width: 188px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.opcoes-superior {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+i {
+    padding-right: 20px;
+}
+
+
+.popup-back {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup-content {
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: white;
+    width: 38%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-opcoes {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.popup-content>p {
+    color: #FD7974;
+}
+
+.popup-bt {
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.aceitar {
+    background-color: #FF8383;
+}
+
+.cancel {
+    background-color: #3F92C5;
+}
+
+.Aviso {
+    color: #FD7979;
+    align-self: center;
+    margin-top: -30px;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.carregando {
+    display: none;
+}
+
+#carregandoDelete {
+    background-color: #FF8383;
+}

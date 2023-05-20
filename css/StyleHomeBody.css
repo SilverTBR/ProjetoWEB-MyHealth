@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #add4d0;
+}
+
+.barra-pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Averia Libre';
+    color: grey;
+    font-size: 24px;
+    font-weight: 40px;
+    line-height: 40px;
+    width: 1250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pesquisa {
+    padding-left: 50px;
+}
+
+h1,
+p,
+span {
+    font-family: 'Averia Libre';
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.grid-container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    background-color: #add4d0;
+    padding: 10px;
+}
+
+.grid-container>article {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+    height: 200px;
+    width: 350px;
+}
+
+.h1-vacina {
+    font-size: 36px;
+    color: #3F92C5;
+    font-weight: 400;
+}
+
+.tipo-dose {
+    background-color: #3F92C5;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tipo-dose>p {
+    color: white;
+}
+
+.data-vac {
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.data-prox {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.data-prox span {
+    color: red;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.botao-adcionar {
+    background-color: #37BD6D;
+    width: 188px;
+    height: 50px;
+    border: 1px solid #37BD6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botao-adcionar p {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 24px;
+    font-weight: 43px;
+    line-height: 43px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lente {
+    position: absolute;
+    left: 35px;
+    top: 128px;
+}

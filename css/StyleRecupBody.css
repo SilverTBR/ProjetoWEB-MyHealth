@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #add4d0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 36px;
+    font-weight: 43px;
+    line-height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+input {
+    font-family: 'Averia Libre';
+    color: #3F92C5;
+    width: 586px;
+    height: 51px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+section {
+    width: 586px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botao-redef {
+    background-color: #37BD6D;
+    width: 188px;
+    height: 50px;
+    border: 1px solid #37BD6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.botao-redef p {
+    font-family: 'Averia Libre';
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+
+.Aviso {
+    color: #FD7979;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 10px;
+
+}
+
+.carregando {
+    display: none;
+}

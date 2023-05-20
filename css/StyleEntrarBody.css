@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #add4d0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.campos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+label {
+    font-family: 'Averia Libre';
+    color: white;
+    font-size: 36px;
+    font-weight: 43px;
+    line-height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+
+input {
+    font-family: 'Averia Libre';
+    color: #3F92C5;
+    width: 450px;
+    height: 51px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+section {
+    width: 586px;
+    ;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao {
+    text-decoration: none;
+    margin: 50px;
+}
+
+.botao-entrar {
+    background-color: #37BD6D;
+    width: 188px;
+    height: 50px;
+    border: 1px solid #37BD6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.botao-entrar p {
+    font-family: 'Averia Libre';
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.esq-senha {
+    font-family: 'Averia Libre';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #419ED7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Aviso {
+    color: #FD7979;
+    align-self: center;
+    margin-top: -30px;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.carregando {
+    display: none;
+}

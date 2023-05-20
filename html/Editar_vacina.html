@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editar vacina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../css/StyleHeader.css" rel="stylesheet">
+    <link href="../css/StyleVacBody.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia Libre">
+    <script src="https://kit.fontawesome.com/bdedc57966.js" crossorigin="anonymous"></script>
+</head>
+<!-- <script>
+    const loadscript = (url) => {
+        var head = document.getElementsByTagName("head")[0]
+        var script = document.createElement("script")
+        script.type = "text/javascript"
+        script.src = url
+        head.appendChild(script)
+    }
+
+    loadscript("../java/JSEditar.js")
+    loadscript("../java/JSHeader.js")
+
+</script> -->
+</head>
+<!--Corpo do arquivo-->
+
+<body>
+    <header>
+        <!--Conteudo a esquerda do header-->
+        <div class="logo" id="logo">
+            <img src="../imagens/Logo.png" class="siringa">
+            <span class="texto-logo">My Health</span>
+        </div>
+        <!--Botão a direita do header-->
+        <ul>
+            <li id="header0">Já tenho conta</li>
+            <li id="header1">Minhas vacinas</li>
+            <li id="header2">Logout</li>
+        </ul>
+
+    </header>
+    <!--Corpo do site-->
+    <main>
+
+        <!--Campo de preenchimento e botão-->
+        <section>
+            <div class="opcoes-superior">
+                <div class="botao-excluir" id="btExcluir">
+                    <i class="fa-solid fa-trash" style="font-size: 28px;"></i>
+                    <p>Excluir</p>
+                </div>
+            </div>
+
+            <div class="campos">
+
+                <!--Label e input de data-->
+                <div class="nome-campo-entrada">
+                    <div class="nome-campo">
+                        <label for="data">Data de vascinação</label>
+                    </div>
+                    <div class="entrada">
+                        <input type="date" id="data">
+                    </div>
+                </div>
+
+
+                <!--Label e input para nome da vacina-->
+                <div class="nome-campo-entrada">
+                    <div class="nome-campo">
+                        <label for="Vac">Vacina</label>
+                    </div>
+                    <div class="entrada">
+                        <input type="text" id="Vac">
+                    </div>
+                </div>
+
+                <!--Label e input de tipo radial para a dose tomada-->
+                <div class="nome-campo-entrada">
+                    <div class="nome-campo">
+                        <label>Dose:</label>
+                    </div>
+                    <div class="entrada" id="radios">
+                        <input type="radio" id="0" class="Dose" value=0 name="Dose">
+                        <label for="1a">1ª dose</label>
+                        <input type="radio" id="1" class="Dose" value=1 name="Dose">
+                        <label for="2a">2ª dose</label>
+                        <input type="radio" id="2" class="Dose" value=2 name="Dose">
+                        <label for="3a">3ª dose</label>
+                        <input type="radio" id="3" class="Dose" value=3 name="Dose">
+                        <label for="reforco">reforco</label>
+                        <input type="radio" id="4" class="Dose" value=4 name="Dose">
+                        <label for="unica">Dose única</label>
+                    </div>
+                </div>
+
+                <!--Comprovante de vacina-->
+                <div class="nome-campo-entrada">
+                    <div class="nome-campo">
+                        <label>Comprovante de vacina: </label>
+                    </div>
+                    <div class="botao-image">
+                        <div class="inserir-image" id="inserir-image">
+                            <span>Selecionar imagem...</span>
+                        </div>
+                        <img class="comprovante" id="imgCompr" src=" ">
+                    </div>
+                </div>
+
+                <!--Label e input de data-->
+                <div class="nome-campo-entrada" id="prox_data">
+                    <div class="nome-campo">
+                        <label for="data_prox">Proxima vacinação: </label>
+                    </div>
+                    <div class="entrada">
+                        <input type="date" id="data_prox">
+                    </div>
+
+
+                </div>
+                <p class="Aviso" id="Aviso"></p>
+            </div>
+
+            <!--Botão para salvar alterações-->
+            <div class="opcoes">
+                <div class="botao-Salvar" id="btSalvar">
+                    <p>Salvar alterações</p>
+                </div>
+                <div id="carregando" class="botao-Salvar carregando">
+                    <p>Salvando...</p>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="popup-back" id="popup">
+        <div class="popup-content">
+            <p>Tem certeza que deseja remover essa vacina?</p>
+            <div class="popup-opcoes">
+                <div class="popup-bt aceitar" id="btAceitar">
+                    <p>SIM</p>
+                </div>
+                <div class="popup-bt cancel" id="btCancel">
+                    <p>CANCELAR</p>
+                </div>
+                <div id="carregandoDelete" class="botao-Salvar carregando">
+                    <p>Deletando...</p>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../java/JSEditar.js"></script>
+</body>
+
+</html>

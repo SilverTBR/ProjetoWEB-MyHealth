@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../css/StyleHeader.css" rel="stylesheet">
+    <link href="../css/StyleEntrarBody.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia Libre">
+    <!-- <script>
+        const loadscript = (url) => {
+            var head = document.getElementsByTagName("head")[0]
+            var script = document.createElement("script")
+            script.type = "text/javascript"
+            script.src = url
+            head.appendChild(script)
+        }
+
+        loadscript("../java/JSHeader.js")
+
+    </script> -->
+
+</head>
+<!--Corpo do arquivo-->
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <!--Conteudo a esquerda do header-->
+        <div class="logo" id="logo">
+            <img src="../imagens/Logo.png" class="siringa">
+            <span class="texto-logo">My Health</span>
+        </div>
+        <!--Botão a direita do header-->
+        <ul>
+            <li id="header0">Já tenho conta</li>
+            <li id="header1">Minhas vacinas</li>
+            <li id="header2">Logout</li>
+        </ul>
+
+    </header>
+    <!--Corpo do site-->
+    <main>
+        <!--Campo de preenchimento e botão-->
+        <section>
+            <div class="campos">
+                <!--Label e input de login com email e senha-->
+                <label for="email">E-mail
+                    <input type="text" id="email">
+                </label>
+
+                <label for="Senha">Senha
+                    <input type="password" id="senha">
+                </label>
+                <p class="Aviso" id="Aviso"></p>
+            </div>
+
+
+            <!--Botão para cadastrar-->
+            <div class="opcoes">
+                <div id="login" class="botao-entrar">
+                    <p>Entrar</p>
+                </div>
+                <div id="carregando" class="botao-entrar carregando">
+                    <p>Acessando...</p>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+
+                <br>
+                <!--HREF para esqueci senha-->
+                <p class="esq-senha" id="esq-senha">Esqueci minha senha</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="module" src="../java/JSEntrar.js"></script>
+</body>
+
+</html>

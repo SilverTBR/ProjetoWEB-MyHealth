@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="../css/StyleHeader.css" rel="stylesheet">
+    <link href="../css/StyleHomeBody.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia Libre">
+    <script src="https://kit.fontawesome.com/bdedc57966.js" crossorigin="anonymous"></script>
+    <!-- <script>
+    //     const loadscript = (url) => {
+    //         var head = document.getElementsByTagName("head")[0]
+    //         var script = document.createElement("script")
+    //         script.type = "text/javascript"
+    //         script.src = url
+    //         head.appendChild(script)
+    //     }
+
+    //     loadscript("../java/JSHeader.js")
+
+    // </script> -->
+</head>
+<!--Corpo do arquivo-->
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <!--Conteudo a esquerda do header-->
+        <div class="logo" id="logo">
+            <img src="../imagens/Logo.png" class="siringa">
+            <span class="texto-logo">My Health</span>
+        </div>
+        <!--Botão a direita do header-->
+        <ul>
+            <li id="header0">Já tenho conta</li>
+            <li id="header1">Minhas vacinas</li>
+            <li id="header2">Logout</li>
+        </ul>
+
+    </header>
+    <!--Corpo do site-->
+    <main>
+        <!--Barra de pesquisa-->
+        <nav class="barra-pesquisa">
+            <i class="fa-solid fa-magnifying-glass fa-xl lente"></i>
+            <input type="text" class="pesquisa" placeholder="PESQUISAR VACINA" id="pesquisa">
+        </nav>
+        <section class="conteudo">
+            <!-- grid dos diversos conteudos-->
+            <div class="grid-container" id="gridCont">
+
+
+            </div>
+        </section>
+
+
+
+        <!--Botão para adcionar nova vacina-->
+        <div class="opcoes">
+            <div class="botao-adcionar" id="btAdc">
+                <p>Nova vacina</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="module" src="../java/JSHome.js"></script>
+</body>
+
+</html>

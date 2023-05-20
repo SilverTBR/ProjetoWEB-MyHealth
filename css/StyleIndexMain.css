@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imagens/Background.jpg");
+    overflow: hidden;
+
+}
+
+html {
+    min-height: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(179.55deg, rgba(12, 12, 12, 0.76), rgba(255, 255, 255, 0.30), rgba(12, 12, 12, 0.76));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #409dd6;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    padding: 80px;
+}
+
+.mid-conteudo {
+    width: 841px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
